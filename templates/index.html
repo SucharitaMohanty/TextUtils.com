@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Text Utils</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <a class="navbar-brand" href="#">TextUtils.com</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <!-- End of nav bar -->
+
+    <!-- Textarea  -->
+
+    <div class="container my-5">
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Enter your text here</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="input" required>{{input_str}}</textarea>
+
+                <input type="radio" aria-label="Radio button for following text input" class="my-3 ml-4" name = "options" value="upper" required>
+                <label for="exampleFormControlTextarea1">Upper Case</label>
+
+                <input type="radio" aria-label="Radio button for following text input" class="my-3 ml-4" name = "options" value="lower"  required>
+                <label for="exampleFormControlTextarea1">Lower Case</label>
+
+                <input type="radio" aria-label="Radio button for following text input" class="my-3 ml-4" name = "options" value="capitalise"  required>
+                <label for="exampleFormControlTextarea1">Capitalise Case</label>
+
+                <input type="radio" aria-label="Radio button for following text input" class="my-3 ml-4" name = "options" value="remove-punctuation" required>
+                <label for="exampleFormControlTextarea1">Remove Punctuation</label>
+
+                <input type="radio" aria-label="Radio button for following text input" class="my-3 ml-4" name = "options" value="remove-extraspace" required>
+                <label for="exampleFormControlTextarea1">Remove ExtraSpace</label>
+
+                <input type="radio" aria-label="Radio button for following text input" class="my-3 ml-4" name = "options" value="word-count" required>
+                <label for="exampleFormControlTextarea1">Word Count</label>
+
+                <input type="radio" aria-label="Radio button for following text input" class="my-3 ml-4" name = "options" value="letter-count" required>
+                <label for="exampleFormControlTextarea1">Letter count</label>
+
+            </div>
+            <button type="submit" class="btn btn-outline-success btn-block btn-lg">Submit</button>
+            
+        </form>
+
+        <div class="form-group my-3">
+            <label for="exampleFormControlTextarea1">Output:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea2" rows="3" readonly>{{output}}</textarea>
+        </div>
+    </div>
+
+    <!-- End of textarea  -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
